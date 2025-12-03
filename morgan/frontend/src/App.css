@@ -1,0 +1,29 @@
+button:hover {
+    cursor: pointer;
+}
+
+.loader {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+}
+
+.loader:after {
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 6px solid #3498db;
+  border-color: #3498db transparent #3498db transparent;
+  animation: spinner 0.8s linear infinite;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
